@@ -5,7 +5,7 @@
 }
 
 h2{
-       font-size: 28px;
+    font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
     color: #010101;
@@ -95,6 +95,51 @@ h2{
 }
 .main-heder-section a:hover{
     background: #ece6e6;
+}
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.left-column {
+    width: 50%;
+}
+
+.left-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.right-column {
+    width: 50%;
+}
+
+.right-column .img1 {
+    width: 60px;
+    height: auto;
+}
+
+.right-column p {
+    line-height: 1.7;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
 }
 
 
@@ -188,6 +233,7 @@ h2{
 .services-section h2{
     padding-bottom: 20px;
 }
+
 .about-section{
     background-image: url(./aboutb.png);
     background-repeat:no-repeat;
